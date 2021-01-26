@@ -1,0 +1,12 @@
+#signupform p{
+    color:white;
+    width: 20%;
+    text-align: center;
+
+}
+#signupform input{
+    width: 70%;
+}
+#signupform{
+    padding: 1rem;
+}

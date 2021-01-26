@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* body{
+    background-image:url("./now.jpg");
+} */
+.btn{
+    background-color: rgb(6, 211, 40);
+    color: white;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    border-radius: 0.1rem;
+    outline: none;
+}

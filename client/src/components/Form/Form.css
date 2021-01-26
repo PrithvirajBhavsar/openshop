@@ -1,0 +1,8 @@
+form div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+form div span,h2{
+    color: white;
+}

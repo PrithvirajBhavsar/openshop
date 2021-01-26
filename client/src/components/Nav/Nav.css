@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+    background-color: rgb(8, 8, 8);
+    justify-content: space-around;
+    padding: 0.5rem;
+    align-items: center;
+    position: sticky;
+    top:0;
+    left:0;
+}
+nav #cname{
+    color: white;    
+}
+nav #auth{
+    display: flex;
+    width:35%;
+    justify-content: space-around;
+}

@@ -1,0 +1,12 @@
+#openshopform p{
+    color:white;
+    width: 25%;
+    text-align: center;
+
+}
+#openshopform input{
+    width: 70%;
+}
+#openshopform{
+    padding: 1rem;
+}
