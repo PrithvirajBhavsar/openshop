@@ -4,3 +4,9 @@
     column-gap: 2rem;
     row-gap: 2rem;
 }
+#shops{
+    border: 1px solid black;
+    width: 30%;
+    height:20rem;
+    overflow: scroll;
+}

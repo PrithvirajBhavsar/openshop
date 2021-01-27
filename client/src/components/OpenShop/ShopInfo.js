@@ -13,7 +13,6 @@ const ShopInfo = (props)=>{
 
     const handleSubmit = (e)=>{
         e.preventDefault();
-        console.log(storeInfo);
         dispatch(postShop(storeInfo));
     }    
 

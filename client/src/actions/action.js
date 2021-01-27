@@ -27,3 +27,12 @@ export const postShop = (shop)=> async (dispatch)=>{
       console.log(erro);
   }
 }
+
+export const getShop = ()=> async (dispatch)=>{
+  try {
+    const gsdata = await api.getShop();
+    dispatch({type:"getShop",data:gsdata.data})
+  } catch (error) {
+    console.log(error);
+  }
+}

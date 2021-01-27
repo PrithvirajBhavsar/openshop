@@ -19,4 +19,16 @@ return(<>
     </div>
 </>);
 }
+const ShopCard = (props)=>{
+    return(
+        <>
+            <div style={{padding:"0.5rem",borderBottom:"2px solid rgb(200,200,200)",display:"flex"}}>
+                <p style={{width:"50%",textAlign:"left",fontSize:"0.8rem"}}>{props.shopName}</p>
+                <p style={{width:"50%",textAlign:"right",fontSize:"0.8rem"}}>{props.shopDetail}</p>
+            </div>
+        </>
+    )
+}
+
 export default Card;
+export {ShopCard};
