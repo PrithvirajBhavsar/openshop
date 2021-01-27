@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from "../../now.jpg";
+import photo from "../../images/now.jpg";
 import "./Card.css";
 
 const style={

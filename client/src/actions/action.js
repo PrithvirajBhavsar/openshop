@@ -22,7 +22,7 @@ export const postUser = (user)=> async (dispatch)=>{
 export const postShop = (shop)=> async (dispatch)=>{
   try {
     const psdata = await api.postShop(shop);  
-    dispatch({type:"postShop",data:psdata});
+    dispatch({type:"postShop",data:psdata.data});
   } catch (erro) {
       console.log(erro);
   }

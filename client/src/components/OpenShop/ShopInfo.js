@@ -1,10 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import "./Individual.css"
-import {useDispatch} from "react-redux";
+import {useDispatch,useSelector} from "react-redux";
 import { postShop } from '../../actions/action';
 
 const ShopInfo = (props)=>{
+
+    const shopsArray = useSelector(state => state.openShopReducer)
+    console.log(shopsArray);
 
     const dispatch = useDispatch();
 
@@ -14,6 +17,11 @@ const ShopInfo = (props)=>{
     const handleSubmit = (e)=>{
         e.preventDefault();
         dispatch(postShop(storeInfo));
+        setStoreInfo({
+        fName:"",lName:"",cardHolder:"",cardNo:"",
+        cvv:"",shopName:"",shopDetail:"",phone:"",
+        address:"",pincode:""
+        })
     }    
 
     const style = {
