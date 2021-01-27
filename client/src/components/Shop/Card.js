@@ -3,7 +3,7 @@ import photo from "../../now.jpg";
 import "./Card.css";
 
 const style={
-    border:"2px solid black",
+    border:"1px solid rgb(200,200,200)",
     display:"inline-flex",
     flexDirection:"column",
 }
