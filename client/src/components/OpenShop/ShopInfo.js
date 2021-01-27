@@ -1,13 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import "./Individual.css"
-import {useDispatch,useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import { postShop } from '../../actions/action';
 
 const ShopInfo = (props)=>{
-
-    const shopsArray = useSelector(state => state.openShopReducer)
-    console.log(shopsArray);
 
     const dispatch = useDispatch();
 

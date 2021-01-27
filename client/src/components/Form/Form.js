@@ -12,7 +12,6 @@ const [user,setUser] = useState({
 const dispatch = useDispatch();
 const handleSubmit = (e)=>{
     e.preventDefault();
-    console.log(user);
     dispatch(postUser(user))
 }
 

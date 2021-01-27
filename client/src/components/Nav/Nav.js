@@ -1,11 +1,8 @@
 import React from 'react';
-import {useSelector} from "react-redux";
 import "./Nav.css"
 import {Link} from "react-router-dom";
 
 const Nav = ()=>{
-    const user = useSelector(state => state.apiReducer);
-    console.log(user);  
 
     return(<>
         <nav>

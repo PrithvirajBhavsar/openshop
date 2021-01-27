@@ -5,7 +5,6 @@ import "./Shop.css";
 const Shop = ()=>{
 
     const shopsArray = useSelector(state => state.openShopReducer)
-    console.log(shopsArray);
     const style={
         border:"1px solid black",
         padding:"1rem",
@@ -43,7 +42,6 @@ return(<>
         <div id="shops">
             <p style={{borderBottom:"2px solid rgb(200,200,200)"}}>Shops</p>
             {shopsArray.map((data)=>{
-                console.log(data);
                 return <ShopCard key={data._id} shopName={data.shopName} shopDetail={data.shopDetail}/>
             })
             }
