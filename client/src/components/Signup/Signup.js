@@ -26,12 +26,14 @@ const Signup = ()=>{
         backgroundColor:"rgb(70,77,150)",
         borderRadius:"0.3rem",
     }
-
-return(
-    <>
+    
+    return(
+        <>
         <h1 style={{padding:"1rem", textAlign:"center" ,fontSize:"2rem"}}>Signup</h1>
         <div id="signupform">
             <form onSubmit={(e)=>{onSubmit(e)}} style={style}>
+        <button style={{width:"100%",margin:"0.2rem 0",backgroundColor:"blue"}} className="btn" type="button">Signup with Facebook</button>
+        <button style={{width:"100%",margin:"0.2rem 0",backgroundColor:"red"}} className="btn" type="button">Signup with Google++</button>
                 <div>
                     <p>Name</p>
                     <input onChange={(e)=>{setUser({...user,firstName:e.target.value})}} type="" value={user.firstName}/>
@@ -56,8 +58,8 @@ return(
                     <p>Pincode</p>
                     <input onChange={(e)=>{setUser({...user,pincode:e.target.value})}} type="" value={user.pincode}/>
                 </div>
-                <div>
-                    <button style={{width:"100%"}} className="btn" type="Submit">Signup</button>
+                <div style={{display:"flex",flexDirection:"column"}}>
+                <button style={{width:"100%",margin:"0.5rem 0"}} className="btn" type="Submit">Signup</button>
                 </div>
             </form>
         </div>
