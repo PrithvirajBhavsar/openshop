@@ -17,7 +17,7 @@ const handleSubmit = (e)=>{
 
 const style = {
     display:"flex",
-    height:"12rem",
+    height:"20rem",
     flexDirection:"column",
     justifyContent:"space-around",
     padding:"1rem",
@@ -41,6 +41,8 @@ return(
                 <input type="password" onChange={(e)=>{setUser({...user,password:e.target.value})}} value={user.password} />
             </div>
             <button className="btn" type="submit">Submit</button>
+            <button className="btn" style={{backgroundColor:"blue"}} type="button">Login with Facebook</button>
+            <button className="btn" style={{backgroundColor:"red"}} type="button">Login with Google++</button>
         </form>
     </>);
 }

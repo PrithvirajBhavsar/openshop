@@ -6,3 +6,10 @@ form div{
 form div span,h2{
     color: white;
 }
+form div span{
+    width:20%;
+    text-align: center;
+}
+form div input{
+    width:65%;
+}
