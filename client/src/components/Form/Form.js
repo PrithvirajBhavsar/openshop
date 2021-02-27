@@ -20,11 +20,11 @@ const handleSubmit = (e)=>{
 }
 
 const responseGoogle=(res)=>{
-    // const image = {img:res.profileObj.imageUrl};
-    // console.log(image);
-    // dispatch(sImage(image))
+    const image = {img:res.profileObj.imageUrl};
+    console.log(image);
+    dispatch(sImage(image))
     console.log("saveImage");
-// }
+}
 
 const style = {
     display:"flex",
@@ -65,4 +65,5 @@ return(
         </form>
     </>);
 }
+
 export default Form;
