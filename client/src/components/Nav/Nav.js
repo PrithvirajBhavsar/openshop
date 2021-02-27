@@ -2,9 +2,10 @@ import React from 'react';
 import "./Nav.css"
 import {Link} from "react-router-dom";
 
-const Nav = ()=>{
-
-    return(<>
+const Nav = (props)=>{
+    console.log(props);
+    const image="";
+        return(<>
         <nav>
             <div id="cname">    
                 <p>OpenYourShop</p> 
@@ -21,6 +22,9 @@ const Nav = ()=>{
             </div>
             <div>
                 <Link to="/OpenShop"><button type="button" className="btn">Open Shop</button></Link>
+            </div>
+            <div>
+                <img src={image} alt="" />
             </div>
             </div>
         </nav>

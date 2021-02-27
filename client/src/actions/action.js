@@ -36,3 +36,20 @@ export const getShop = ()=> async (dispatch)=>{
     console.log(error);
   }
 }
+
+export const sImage = (img)=> (dispatch)=>{
+  try {
+    dispatch({type:"cImg",data:img})
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export const gImage = ()=> (dispatch)=>{
+  try {
+    dispatch({type:"gImg"})
+  } catch (error) {
+    console.log(error);
+  }
+}
+
