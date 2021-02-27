@@ -4,7 +4,8 @@
   "description": "first repo\r This is a practice project in which i m practising about redux backend and frontend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"cd client"
   },
   "repository": {
     "type": "git",
