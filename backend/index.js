@@ -14,10 +14,9 @@ app.use(cors());
 
 app.use(('/'),routes);
 
-const CONNECTION_URL = "mongodb+srv://Prithviraj:Prithviraj123@cluster0.umchc.mongodb.net/<dbname>?retryWrites=true&w=majority";
-// const CONNECTION_URL = 'mongodb://localhost:27017/Practise';
+// const CONNECTION_URL = "mongodb+srv://Prithviraj:Prithviraj123@cluster0.umchc.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(app.listen(port,()=>console.log(`server started at port ${port}`)))
