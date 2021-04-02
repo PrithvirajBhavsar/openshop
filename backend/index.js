@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use(('/'),routes);
 
-// const CONNECTION_URL = "mongodb+srv://Prithviraj:Prithviraj123@cluster0.umchc.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const CONNECTION_URL = 'mongodb://localhost:27017/Practise';
 
 const port = process.env.PORT;
 
